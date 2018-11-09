@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Noto+Serif|Open+Sans');
+
+#wrapper {
+width: 900px;
+margin: 25px auto;
+display: grid;
+grid-template-columns: 148px auto;
+grid-column-gap: 50px;
+}
+
+.message {
+  display: none;
+}
+
+main {
+  border-left: 1px solid #eee;
+  padding-left: 50px;
+  font-family: "Lora", Helvetica, sans-serif;
+  text-align: justify;
+
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+#intro {
+font-family: "Lora", Helvetica, sans-serif;
+}
+#intro h1 {
+  font-family: "Noto Serif", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  }
+
+  #intro p{
+  font-family: "Noto Serif", Helvetica, sans-serif;
+  font-style: italic;
+  text-align: center;
+  }
+
+  #education h3 {
+  margin-top: 0;
+}
+
+  #education article {
+  margin-bottom: 25px;
+}
+
+  #education p{
+  margin: 0;
+  font-family: "Lora", Helvetica, sans-serif;
+}
+#technical li{
+  list-style-type: square;
+  padding-left: 5px;
+}
+
+  #professional li {
+  line-height: 20px;
+  list-style-type: square;
+  text-align: justify;
+  padding-left: 5px;
+}
+
+  #history li{
+  line-height: 20px;
+  list-style-type: square;
+  text-align: justify;
+  padding-left: 5px;
+}
+
+#intro a:visited {
+  color: darkblue;
+}
+
+#intro a:hover {
+  color: green;
+}

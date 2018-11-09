@@ -1,0 +1,107 @@
+/* old css */
+
+
+div{
+  width: 200px;
+  height: 200px;
+  }
+
+
+#intro{
+  width: 200px;
+  height: 300px;
+  background-color: grey;
+  margin: 1px, 1px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow:visible;
+}
+
+img{
+  border-radius: 30%;
+  box-shadow: 5 0 10px;
+}
+
+h1{
+  font-family: "Lora", Helvetica, sans-serif;
+  font-size: 24px;
+  color: #222;
+
+}
+h2{
+  font-family: "Lora", Helvetica, sans-serif;
+  font-size: 20px;
+  color: #444;
+}
+h3{
+  font-family:"Lora", Helvetica, sans-serif;
+  font-size: 18px;
+  color: #333;
+  text-align:center;
+}
+p em{
+  font-family: "Lora", Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 10px,20px, 10px;
+
+}
+body {
+  font-family: "Lora", "Helvetica", sans-serif;
+  font-size: 14px;
+
+  }
+#education {
+  float: right;
+  background-color: lightgrey;
+  position: relative;
+  padding-bottom: 0;
+}
+#technical {
+grid-column: 2;
+grid-row: 3;
+background-color: rgb(192,192,192);
+}
+
+#professional {
+  background-color: grey;
+  grid-column: 2;
+  grid-row: 4;
+  }
+
+#history{
+  background-color: lightgrey;
+  grid-row: 5;
+  grid-column: 2;
+}
+a:visited {
+  color: darkblue;
+}
+
+a:hover {
+  color: green;
+}
+
+header intro{
+  margin: 2rem auto;
+  max-width: 300px;
+  max-height:600px;
+  position: static;
+  background-color: grey;
+}
+
+main {
+  padding: 20px, ;
+  max-width: 900px;
+}
+nav ul{
+  list-style-type: square;
+  padding: 0;
+  display:inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding:20px;
+  }
+
+.message{
+  display: none;
+}
