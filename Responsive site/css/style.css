@@ -11,10 +11,9 @@
 }
 
 body{
-  font-family: "Roboto", Helvetica, sans-serif;
+  /* font-family: "Roboto", Helvetica, sans-serif; */
   /* margin: 0; */
   text-align: center;
-  color: #eee;
     }
 
 main {
@@ -26,38 +25,34 @@ main {
   width: 100%;
   height: 40vh;
   padding-top: 200px;
-  font-family: "Lora", Arial,sans-serif;
-  font-weight: 600;
-  font-size: 1.5em;
-  color: grey;
-  /* color: rgb(238,238,238); */
+  font-family: "Montserrat", Arial,sans-serif;
+  font-weight: bolder;
+  font-size: 2.5em;
+  /* color: crimson; */
+  color: rgb(255,127,80);
   text-decoration: none;
   text-align: center;
 }
 #box1 {
-  background-color: black;
-  /* background: url("../images/top_ah_unsplash.jpg"); */
-  background-position: 15%;
+    background-position: 15%;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: opacity(.5);
-    background-image: url("../images/flowers.jpg");
+  filter: opacity(.7);
+  background-image: url("../images/book.jpg");
 }
 
 #box1info {
   width: 80%;
   height: auto;
   margin: 0 auto;
-  color: black;
+  background-color: whitesmoke;
 
 }
 
 
 #box2 {
-  background-color: hotpink;
-    background-image: url("../images/flowers.jpg");
-    filter: opacity(.4);
-  /* background-image: url("../images/light_up_vessels.jpg"); */
+  background-image: url("../images/flowers.jpg");
+  filter: opacity(.7);
   background-position: 15%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,24 +62,24 @@ main {
   width: 80%;
   height: auto;
   margin: 0 auto;
-  color: black;
+  /* color: black; */
 }
 
 #box3 {
-  background-color: lightslategrey;
+  /* background-color: lightslategrey; */
   /* background-image: url("../images/candlelights_unsplash.jpg"); */
   background-position: 15%;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: opacity(.3);
-      background-image: url("../images/flowers.jpg");
+  filter: opacity(.7);
+  background-image: url("../images/tin_candle.jpg");
 }
 
 #box3info {
   width: 80%;
   height: auto;
   margin: 0 auto;
-  color: black;
+  /* color: black; */
 
 }
 
@@ -93,24 +88,26 @@ h1 h2{
   font-style:italic;
   text-align: center;
 
+
   /* text-shadow:2px 2px white; */
   }
 
 
 header {
-  background-image: url("../images/flowers.jpg");
+  /* background-image: url("../images/flowers.jpg"); */
+    background-image: url("../images/flame_unsplash.jpg");
   /* background-color: grey; */
   background-position: center;
   padding: 80px;
-  /* filter:sepia(.5); */
+  filter:opacity(.9);
+    color: rgb(165,42,42);
+  /* font-weight: bolder;
+  font-style: italic; */
+  font-size: 20px;
   /* margin-right: -120px; */
 
 }
 
-#wrapper {
-  /* max-width: none; */
-  /* margin: 0 auto; */
-}
 
 #wrapper1{
   position:relative;
@@ -126,7 +123,9 @@ header {
   }
 
 
-  #wrapper p{
+  #wrapper {
+    /* color: darkred; */
+    font-size: 20px;
     color: 	 #0d0d0d;
     text-align: center;
     font-family: "Montserrat", Arial, sans-serif;
