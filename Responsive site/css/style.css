@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Open+Sans|Roboto');
+@supports (display:grid){
+  .message {
+  display: none;
+}
+}
+@media (max-width: 768px){
+  .grid{
+    grid-template-columns: auto;
+  }
+}
+
+body{
+  font-family: "Roboto", Helvetica, sans-serif;
+  /* margin: 0; */
+  text-align: center;
+  color: #eee;
+    }
+
+main {
+  width: 100%;
+
+       }
+
+.boxClass{
+  width: 100%;
+  height: 40vh;
+  padding-top: 200px;
+  font-family: "Lora", Arial,sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: grey;
+  /* color: rgb(238,238,238); */
+  text-decoration: none;
+  text-align: center;
+}
+#box1 {
+  background-color: black;
+  /* background: url("../images/top_ah_unsplash.jpg"); */
+  background-position: 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(.5);
+    background-image: url("../images/flowers.jpg");
+}
+
+#box1info {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  color: black;
+
+}
+
+
+#box2 {
+  background-color: hotpink;
+    background-image: url("../images/flowers.jpg");
+    filter: opacity(.4);
+  /* background-image: url("../images/light_up_vessels.jpg"); */
+  background-position: 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#box2info {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  color: black;
+}
+
+#box3 {
+  background-color: lightslategrey;
+  /* background-image: url("../images/candlelights_unsplash.jpg"); */
+  background-position: 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(.3);
+      background-image: url("../images/flowers.jpg");
+}
+
+#box3info {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  color: black;
+
+}
+
+h1 h2{
+  font-family: "Montserrat",Arial, sans-serif;
+  font-style:italic;
+  text-align: center;
+
+  /* text-shadow:2px 2px white; */
+  }
+
+
+header {
+  background-image: url("../images/flowers.jpg");
+  /* background-color: grey; */
+  background-position: center;
+  padding: 80px;
+  /* filter:sepia(.5); */
+  /* margin-right: -120px; */
+
+}
+
+#wrapper {
+  /* max-width: none; */
+  /* margin: 0 auto; */
+}
+
+#wrapper1{
+  position:relative;
+  padding-bottom: 2%;
+}
+
+#navbar{
+  position: absolute;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: bold;
+
+  }
+
+
+  #wrapper p{
+    color: 	 #0d0d0d;
+    text-align: center;
+    font-family: "Montserrat", Arial, sans-serif;
+      }
