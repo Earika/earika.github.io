@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Open+Sans|Roboto');
+
 @supports (display:grid){
   .message {
   display: none;
 }
-}
-@media (max-width: 768px){
-  .grid{
-    grid-template-columns: auto;
-  }
-}
 
-body{
-  text-align: center;
-    }
+
+/* body{
+  text-align: justify;
+    } */
 
 main {
   width: 100%;
@@ -22,7 +18,7 @@ main {
 .boxClass{
   width: 100%;
   height: 20vh;
-  padding-top: 200px;
+  padding-top: 30px;
   font-family: "Montserrat", Arial,sans-serif;
   font-weight: bolder;
   font-size: 2.5em;
@@ -37,14 +33,15 @@ main {
   background-size: cover;
   filter: opacity(.7);
   background-image: url("../images/book.jpg");
-  box-shadow: inset 0px 0px 10px 10px #CD853F;
+  box-shadow: inset 0px 0px 5px 5px #CD853F;
 }
 
 #box1info {
-  width: 80%;
-  height: auto;
+  width: 100%;
+  height: 200px;
   margin: 0 auto;
   background-color: whitesmoke;
+    overflow: scroll;
 
 }
 
@@ -55,7 +52,7 @@ main {
   background-position: 15%;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0px 0px 5px 5px #CD853F;
+  box-shadow: inset 0px 0px 2px 2px #CD853F;
 }
 
 #box2info {
@@ -91,12 +88,12 @@ h1 h2{
 header {
   background-image: url("../images/flame_unsplash.jpg");
   background-position: center;
-  padding: 40px;
+  padding: 10px;
   filter:opacity(.9);
   color: rgb(178,34,34);
   box-shadow: inset 0px 0px 10px 10px #CD853F;
-  font-size: 20px;
-
+  font-size: 14px;
+  background-repeat: no-repeat;
 }
 
 
@@ -115,7 +112,7 @@ header {
 
 
   #wrapper {
-    font-size: 20px;
+    font-size: 14px;
     color: 	 #0d0d0d;
     text-align: center;
     font-family: "Montserrat", Arial, sans-serif;
