@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <link href="css/style.css" rel="stylesheet"/>
-    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="css/mobile.css">
     <meta name="viewport" content="initial-scale=1">
     <title>Candles in the Making</title>
   </head>
@@ -99,8 +99,10 @@
 
         $("#box1").click(function(){
         //  $("#box1info").show(1000);
-            $("#box1info").toggle(1000);
+            $("#box1info").toggle(1000,function(){
+            $('html, body').animate({scrollTop:  1100}, 'slow');
         });
+      });
 
         $("#box1close").click(function(){
             $("#box1info").hide(1000);
@@ -117,48 +119,38 @@
           $(this).html("X");
         });
 
-      })
-      </script>
+        $("#box2info").hide();
 
-<script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $("document").ready(function(){
-          // add jquery commands below
-          $("#box2info").hide();
+        $("#box2").click(function(){
+        //  $("#box1info").show(1000);
+            $("#box2info").toggle(1000,function(){
+              $('html, body').animate({scrollTop:  1100}, 'slow');
+            });
+        });
 
-          $("#box2").click(function(){
-          //  $("#box1info").show(1000);
-              $("#box2info").toggle(1000);
-          });
+        $("#box2close").click(function(){
+            $("#box2info").hide(1000);
+        });
 
-          $("#box2close").click(function(){
-              $("#box2info").hide(1000);
-          });
+        $("#box2close").mouseenter(function(){
+          $("#box2close").css("color", "black");
+          $(this).html("close");
 
-          $("#box2close").mouseenter(function(){
-            $("#box2close").css("color", "black");
-            $(this).html("close");
+        });
 
-          });
+        $("#box2close").mouseleave(function(){
+          $("#box2close").css("color", "grey");
+          $(this).html("X");
+        });
 
-          $("#box2close").mouseleave(function(){
-            $("#box2close").css("color", "grey");
-            $(this).html("X");
-          });
-          });
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      // your code goes here
-      $("document").ready(function(){
-        // add jquery commands below
         $("#box3info").hide();
 
         $("#box3").click(function(){
         //  $("#box3info").show(1000);
-            $("#box3info").toggle(1000);
+            $("#box3info").toggle(100, function(){
+              $('html, body').animate({scrollTop:  $(document).height()}, 'slow');
+            });
+          //  var docHeight = $(document).height() + 400;
         });
 
         $("#box3close").click(function(){
@@ -168,6 +160,7 @@
         $("#box3close").mouseenter(function(){
           $("#box3close").css("color", "black");
           $(this).html("close");
+
         });
 
         $("#box3close").mouseleave(function(){
@@ -177,6 +170,8 @@
 
       })
       </script>
+
+
 
 
 
