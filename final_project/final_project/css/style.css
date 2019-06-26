@@ -1,4 +1,4 @@
-@import url('//fonts.googleapis.com/css?family=Josefin+Slab:400,700');
+@import url(@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab:400,700|Open+Sans+Condensed:300|Roboto&display=swap');
 body {
   overflow: hidden;
 }
@@ -11,7 +11,7 @@ a {
 	height: 100%;
 	top: 0;
 	left: 0;
-	font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
+	font-family: 'Josefin Slab', 'Open Sans', Arial, sans-serif;
 }
 
 .container1 > input,
@@ -114,6 +114,7 @@ a {
 	-ms-transition: all 0.6s ease-in-out;
 	transition: all 0.6s ease-in-out;
 
+
 	/* Let's enforce some hardware acceleration */
 	-webkit-transform: translate3d(0, 0, 0);
 	-webkit-backface-visibility: hidden;
@@ -199,7 +200,30 @@ a {
 	transform: rotate(-45deg) translateY(25%);
 }
 
+
+/*
+#box1info{
+  font: "Josefin Slab", Arial;
+  color: #e23a6e;
+  text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+  position: relative;
+  font-size: 54px;
+  font-weight: 900;
+  width: 80%;
+  left: 10%;
+  text-align: center;
+  line-height: 50px;
+  margin: 30px 0 0 0;
+  padding: 0;
+  top: 50%;
+} */
+   .text {
+    font-size: 16px;
+  }
+
+
 .panel h2 {
+  font: "Josefin Slab", Arial;
 	color: #e23a6e;
 	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
 	position: absolute;
@@ -281,7 +305,7 @@ a {
 	}
 }
 
-panel p {
+.panel p {
 	position: absolute;
 	text-align: center;
 	font-size: 16px;
@@ -293,7 +317,7 @@ panel p {
 	left: 25%;
 	top: 50%;
 	margin: 10px 0 0 0;
-	-webkit-backface-visibility: hidden;
+	/* -webkit-backface-visibility: hidden; */
 }
 #control-1:checked ~ .scroll #panel-1 p,
 #control-2:checked ~ .scroll #panel-2 p,
@@ -371,9 +395,9 @@ panel p {
    /* .color [data-icon]:after {
 	color: #fa96b5;
 } */
-.color deco {
+/* .color photo {
 	background: #fff;
-}
+} */
 .color h2 {
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
@@ -391,7 +415,7 @@ panel p {
 	.panel p {
 		width: 90%;
 		left: 5%;
-		margin-top: 0;
+		margin: 0;
 	}
 
 	.container > a {

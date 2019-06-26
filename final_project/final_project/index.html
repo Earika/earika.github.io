@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Earika" content="Portfolio">
+    <link href="css/style.css" rel="stylesheet"/>
+  <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+  <meta name="viewport" content="initial-scale=1">
+    <title>Earika Adams|Profile</title>
+
+  </head>
+  <body>
+    <div class="container">
+
+			<div class="container1">
+
+				<input type="radio" name="radio-set" checked="checked" id="control-1"/>
+				<a href="#panel-1">About</a>
+				<input type="radio" name="radio-set" id="control-2"/>
+				<a href="panel-2">Resume</a>
+				<input type="radio" name="radio-set" id="control-3"/>
+				<a href="panel-3">Projects</a>
+				<input type="radio" name="radio-set" id="control-4"/>
+				<a href="panel-4">Gallery</a>
+				<input type="radio" name="radio-set" id="control-5"/>
+				<a href="panel-5">Contact</a>
+
+				<div class="scroll">
+
+
+					<section class="panel" id="panel-1">
+
+						<h2><a href="">Greetings</h2>
+
+            <!-- <div class="box1info"> -->
+						<p>Welcome, my name is Earika L. Adams. A true sagittarius, explorer of life, love, and unique experiences.  I hope you enjoy my site. It was truly a joy to build it. </p>
+              </section>
+          <!-- </div>
+          <div class="text"><a id="box1close" href="#box1">close</a> -->
+          <!-- </div> -->
+
+
+					<section class="panel color" id="panel-2">
+						<h2><a href="http://earikaadams.me/CIM111/HW/resume/index.html">Resume</a></h2>
+						<p>For an overview of my work experience and skills feel free to check out my resume.</p>
+					</section>
+
+					<section class="panel color" id="panel-3">
+						<h2><a href="http://earikaadams.me/Responsive-site/index.html">Current Projects</a></h2>
+						<p>Just a sneak peek of what I have been working on in my downtime. </p>
+					</section>
+
+					<section class="panel color" id="panel-4">
+						<h2><a href="">Gallery</a></h2>
+						<p>Just E, not a fashionista. Akwardly me with butterfly kind of charm. Explorer of life, love, and unique experiences.</p>
+					</section>
+
+					<section class="panel color" id="panel-5">
+						<!-- <div class="photo" img src="images/earika.jpg" img alt="Earika picture"></div> -->
+						<h2><a href="mailto:elcenord@gmail.com">Contact</a></h2>
+						<p>If you enjoyed my site or just want to connect with me.</p>
+					</section>
+
+				</div>
+
+			</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      // your code goes here
+      $("document").ready(function(){
+        // add jquery commands below
+        $("#box1info").hide();
+
+        $("#box1").click(function(){
+        //  $("#box1info").show(1000);
+            $("#box1info").toggle(1000,function(){
+            $('html, body').animate({scrollTop:  1100}, 'slow');
+        });
+      });
+
+        $("#box1close").click(function(){
+            $("#box1info").hide(1000);
+        });
+
+        $("#box1close").mouseenter(function(){
+          $("#box1close").css("color", "black");
+          $(this).html("close");
+          //$(this).html("<img src='' width='20'>");
+        });
+
+        $("#box1close").mouseleave(function(){
+          $("#box1close").css("color", "grey");
+          $(this).html("X");
+        });
+
+        $("#box2info").hide();
+
+        $("#box2").click(function(){
+        //  $("#box1info").show(1000);
+            $("#box2info").toggle(1000,function(){
+              $('html, body').animate({scrollTop:  1100}, 'slow');
+            });
+        });
+
+        $("#box2close").click(function(){
+            $("#box2info").hide(1000);
+        });
+
+        $("#box2close").mouseenter(function(){
+          $("#box2close").css("color", "black");
+          $(this).html("close");
+
+        });
+
+        $("#box2close").mouseleave(function(){
+          $("#box2close").css("color", "grey");
+          $(this).html("X");
+        });
+
+        $("#box3info").hide();
+
+        $("#box3").click(function(){
+        //  $("#box3info").show(1000);
+            $("#box3info").toggle(100, function(){
+              $('html, body').animate({scrollTop:  $(document).height()}, 'slow');
+            });
+          //  var docHeight = $(document).height() + 400;
+        });
+
+        $("#box3close").click(function(){
+            $("#box3info").hide(1000);
+        });
+
+        $("#box3close").mouseenter(function(){
+          $("#box3close").css("color", "black");
+          $(this).html("close");
+
+        });
+
+        $("#box3close").mouseleave(function(){
+          $("#box3close").css("color", "grey");
+          $(this).html("X");
+        });
+
+      })
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
