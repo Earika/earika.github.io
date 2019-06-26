@@ -1,4 +1,4 @@
-@import url(@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab:400,700|Open+Sans+Condensed:300|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans|Roboto&display=swap');
 body {
   overflow: hidden;
 }
@@ -11,7 +11,7 @@ a {
 	height: 100%;
 	top: 0;
 	left: 0;
-	font: 'Josefin Slab', 'Open Sans', Arial, sans-serif;
+	font-family: 'Josefin Slab', sans-serif;
 }
 
 .container1 > input,
@@ -84,7 +84,7 @@ a {
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-bottom-color: #666666;
+	border-bottom-color: #D84949;
 	border-width: 20px;
 	left: 50%;
 	margin-left: -20px;
@@ -200,7 +200,6 @@ a {
 	transform: rotate(-45deg) translateY(25%);
 }
 
-
 /*
 #text {
   font: "Josefin Slab";
@@ -224,8 +223,8 @@ a {
   -webkit-backface-visibility: hidden;
 } */
 
-/*
-#box1info{
+
+/* #box1info{
   font: "Josefin Slab", Arial;
   color: #e23a6e;
   text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
@@ -238,15 +237,15 @@ a {
   line-height: 50px;
   margin: 30px 0 0 0;
   padding: 0;
+}
   top: 50%;
-} */
    /* .text {
     font-size: 16px;
-  } */
+  } */ 
 
 
 .panel h2 a{
-  font: "Josefin Slab", Arial;
+  font-family: "Josefin Slab", sans-serif;
 	color: #322676;
 	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
 	position: absolute;
@@ -340,7 +339,7 @@ a {
 	left: 25%;
 	top: 50%;
 	margin: 10px 0 0 0;
-	/* -webkit-backface-visibility: hidden; */
+	-webkit-backface-visibility: hidden;
 }
 #control-1:checked ~ .scroll #panel-1 p,
 #control-2:checked ~ .scroll #panel-2 p,
@@ -415,18 +414,15 @@ a {
 .photo{
 	background: #96B5FA;
 }
-   /* .color [data-icon]:after {
-	color: #fa96b5;
-} */
-/* .color photo {
-	background: #fff;
-} */
+
 .color h2 {
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 .color p {
 	color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 	/* color: rgba(255,255,255,0.8); */
 }
 

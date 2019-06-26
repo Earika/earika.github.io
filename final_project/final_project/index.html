@@ -30,10 +30,12 @@
 
 					<section class="panel color" id="panel-1">
 
-						<h2><a href="">Greetings</h2>
+						<h2><a id="box1close" >Greetings</a></h2>
 
 
-            <p>Welcome, my name is Earika L. Adams. A true sagittarius, explorer of life, love, and unique experiences.  I hope you enjoy my site. It was truly a joy to build it. </p>
+            <div class="text" id="greetingsText">
+              <p>Welcome, my name is Earika L. Adams. A true sagittarius, explorer of life, love, and unique experiences.  I hope you enjoy my site. It was truly a joy to build it. </p>
+            </div>
 
               </section>
           <!-- </div>
@@ -42,13 +44,27 @@
 
 
 					<section class="panel color" id="panel-2">
-						<h2><a href="http://earikaadams.me/CIM111/HW/resume/index.html">Resume</a></h2>
-						<p>For an overview of my work experience and skills feel free to check out my resume.</p>
+
+
+
+              <!-- href="http://earikaadams.me/CIM111/HW/resume/index.html" -->
+						<h2><a id="box2close">Resume</a></h2>
+
+
+              <div class="text" id="resume">
+
+                <iframe src="http://earikaadams.me/CIM111/HW/resume/index.html" width="80%"></iframe>
+
+						<!-- <p>For an overview of my work experience and skills feel free to check out my resume.</p> -->
+
+          </div>
 					</section>
 
 					<section class="panel color" id="panel-3">
-						<h2><a href="http://earikaadams.me/Responsive-site/index.html">Current Projects</a></h2>
+						<h2><a id="box3close" href="http://earikaadams.me/Responsive-site/index.html">Projects</a></h2>
+            <div class="text" id="greetingsText">
 						<p>Just a sneak peek of what I have been working on in my downtime. </p>
+          </div>
 					</section>
 
 					<section class="panel color" id="panel-4">
@@ -75,6 +91,9 @@
         // add jquery commands below
         $("#box1info").hide();
 
+        $(".text").hide();
+
+
         $("#box1").click(function(){
         //  $("#box1info").show(1000);
             $("#box1info").toggle(1000,function(){
@@ -83,67 +102,54 @@
       });
 
         $("#box1close").click(function(){
-            $("#box1info").hide(1000);
+            $("#greetingsText").toggle(1000);
         });
 
         $("#box1close").mouseenter(function(){
-          $("#box1close").css("color", "black");
-          $(this).html("close");
+          $(this).html("Click to See My Intro");
           //$(this).html("<img src='' width='20'>");
         });
 
         $("#box1close").mouseleave(function(){
-          $("#box1close").css("color", "grey");
-          $(this).html("X");
+          $(this).html("Greetings");
         });
 
-        $("#box2info").hide();
-
-        $("#box2").click(function(){
-        //  $("#box1info").show(1000);
-            $("#box2info").toggle(1000,function(){
-              $('html, body').animate({scrollTop:  1100}, 'slow');
-            });
-        });
-
-        $("#box2close").click(function(){
-            $("#box2info").hide(1000);
-        });
 
         $("#box2close").mouseenter(function(){
-          $("#box2close").css("color", "black");
-          $(this).html("close");
+          $(this).html("Click To View My Resume");
 
         });
 
         $("#box2close").mouseleave(function(){
-          $("#box2close").css("color", "grey");
-          $(this).html("X");
+        $(this).html("Resume");
         });
 
-        $("#box3info").hide();
-
-        $("#box3").click(function(){
-        //  $("#box3info").show(1000);
-            $("#box3info").toggle(100, function(){
-              $('html, body').animate({scrollTop:  $(document).height()}, 'slow');
-            });
-          //  var docHeight = $(document).height() + 400;
+        $("#box2close").click(function(){
+            $("#resume").toggle(1000);
         });
 
-        $("#box3close").click(function(){
-            $("#box3info").hide(1000);
-        });
+        // $("#box3close").hide();
+        //
+        // $("#box3").click(function(){
+        // //  $("#box3info").show(1000);
+        //     $("#box3info").toggle(100, function(){
+        //       $('html, body').animate({scrollTop:  $(document).height()}, 'slow');
+        //     });
+        //   //  var docHeight = $(document).height() + 400;
+      //  });
+
+        // $("#box3close").click(function(){
+        //     $("#box3info").hide(1000);
+        // });
 
         $("#box3close").mouseenter(function(){
-          $("#box3close").css("color", "black");
-          $(this).html("close");
+        $(this).html("Click To View Current Project");
 
         });
 
         $("#box3close").mouseleave(function(){
-          $("#box3close").css("color", "grey");
-          $(this).html("X");
+          // $("#box3close").css("color", "grey");
+          $(this).html("Projects");
         });
 
       })
